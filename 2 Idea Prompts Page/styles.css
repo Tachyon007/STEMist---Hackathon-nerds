@@ -1,0 +1,100 @@
+body{
+    margin: 0px;
+    padding: 0px;   
+
+}
+
+
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 6vh;    
+
+    border-bottom: 1px solid black;
+
+    font-size: 3vmin;
+}
+
+.nav{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    background-color: aqua;
+}
+
+.headerTitle{
+    position: absolute;
+    width: max-content;
+
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5vmin;
+}
+
+.login{
+    position: absolute;
+    width: 10%;
+    right: 0%;
+
+    height: 100%;
+    text-align: center;
+    background-color: aqua;
+}
+
+
+.searchContainer{
+    position: relative;
+    height: 30vh;
+
+    background-color: aquamarine;
+}
+
+.searchbarGrid{
+    position: relative;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 50%;
+    height: 25%;
+
+    display: grid;
+    grid-template-columns: 1fr 50fr;
+
+    background-color: white;
+    border: 1px solid black;
+}
+
+.iconHelper{
+    position: relative; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    height: max-content; 
+
+    border-right: 1px solid black;
+    margin-right: 1%;
+}
+
+.searchBar{
+    position: relative;
+    width: 99%;
+    height: 90%;
+    padding: 0px;
+
+    border: none;
+    padding-left: 1%;
+}
+input{
+    font-size: 3.8vmin;
+}
+input:focus{
+    outline: none;
+}
+

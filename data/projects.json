@@ -1,0 +1,76 @@
+[
+    {
+        "Title": "Dungeon Crawler",
+        "Description": "Game where each room is randomly generated and the player must navigate through the levels gathering loot and killing enemies",
+        "Tags": [
+            "Backend",
+            "Frontend",
+            "Game"
+        ]
+    },
+    {
+        "Title": "Task Manager Application",
+        "Description": "Application that manages your tasks or stuff to do",
+        "Tags": [
+            "Backend",
+            "Frontend",
+            "Data"
+        ]
+    },
+    {
+        "Title": "Randy Randy",
+        "Description": "Description stuffs ",
+        "Tags": [
+            "Web Scraping",
+            "Python",
+            "Data Extraction",
+            "Data Scraping",
+            "Online Prices",
+            "E-Commerce Data",
+            "Data Mining",
+            "Beautifulsoup",
+            "Requests",
+            "Parsing Html",
+            "Price Comparison",
+            "Data Collection",
+            "Automation",
+            "Product Prices",
+            "Data Analysis",
+            "Data Manipulation",
+            "Data Cleaning",
+            "Data Visualization",
+            "Website Data",
+            "Api Integration",
+            "Price Tracking",
+            "Data Aggregation",
+            "Price Monitoring",
+            "Web Crawling",
+            "Data Harvesting",
+            "Data Processing",
+            "Data Storage",
+            "Csv Files",
+            "Json Format",
+            "Data Presentation",
+            "Data Insights",
+            "Online Retailers",
+            "Price Fluctuations",
+            "Historical Data",
+            "Scrapy Framework",
+            "Regular Expressions",
+            "Data Export",
+            "Data Filtering",
+            "Data Exploration",
+            "Data Handling",
+            "Price Alerts",
+            "Price Prediction",
+            "Data Accuracy",
+            "Data Transformation",
+            "Data Normalization",
+            "Data Integration",
+            "Data Validation",
+            "Price History",
+            "Data Reporting",
+            "User-Friendly Interface"
+        ]
+    }
+]

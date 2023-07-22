@@ -9,3 +9,19 @@ git branch
 git checkout {branch name}
 git merge {name of branch w/ changes you want}
 
+
+//kev notes:
+(On dev_kev branch)
+git add .
+git commit -m "i did a thing"
+git push
+
+git checkout main
+git pull
+git merge dev_kev
+git push
+
+(save changes back on dev_kev)
+git checkout dev_kev
+git merge main
+git push

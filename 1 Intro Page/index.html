@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdeaSpark</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+    <script type="module" src="./main.js" defer></script>
+</head>
+<body>
+    
+    <div class="header appear delay3">
+        <div class="nav">
+            <div>home</div>
+            <div>search</div>
+            <div>projects</div>
+        </div>
+
+        <div class="login">
+            Log In
+        </div>
+    </div>
+
+    <div class="welcomeContainer appear delay1">
+        <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%)">Welcome</div>
+    </div>
+    <div class="txtSection appear delay2">
+        Generate your next coding project! Find a prompt you like and put your own spin on it
+    </div>
+
+
+    <div class="gridSection appear delay3">
+        <div>
+            <p>Click below to generate some random projects!</p>
+            <div class="cButton">Generate</div>
+        </div>
+        <div>
+            <p style="font-size: 5vmin;">OR</p>
+        </div>
+        <div>
+            <p>Take a quick servey to get projects that are right for you!</p>
+            <div class="cButton" onclick="scrollToSurvey()">Survey</div>
+        </div>
+    </div>
+
+
+    <section style="margin-top: 20vh; font-size: 5vmin;" id="tagSelect">
+        <div style="text-align: center;">Click on whatever tags you want in your project!</div>
+        <div class="tagGrid">
+            <div onclick="toggleTagSelect(this)">game</div>
+            <div onclick="toggleTagSelect(this)">website</div>
+            <div onclick="toggleTagSelect(this)">scraper</div>
+            <div onclick="toggleTagSelect(this)">tracker</div>
+        </div>
+        <div class="cButton" style="margin-bottom: 5%;">Generate</div>
+
+        <div class="projects" id="pTitle"></div>
+        <div class="projects" id="pDescription"></div>
+        <div class="projects" id="pTags"></div>
+        
+    </section>
+    
+</body>
+</html>
