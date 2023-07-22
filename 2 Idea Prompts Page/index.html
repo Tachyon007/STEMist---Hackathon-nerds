@@ -36,6 +36,8 @@
                                 
             <input type="text" class="searchBar" onchange="search(this)">
         </div>
+
+        <div class="addPromptB" onclick="togglePopUp()">Add Prompt</div>
     </div>
 
     <div class="resultContainer" id="resContainer">
@@ -56,6 +58,23 @@
         </div>
         <div class="searchRes">
             b
+        </div>
+    </div>
+
+
+    <div class="popUpFormBack" id="popup" style="display: none;">
+        <div class="popUpForm">
+            <div style="text-align: center; border-bottom: 1px solid black; height: 10%;">
+                Upload new prompt
+            </div>
+
+            <div>title:<br> <input type="text"></div>
+            <div>description:<br> <textarea style="width: 75%;"></textarea></div>
+
+            <div style="width: 50%; left: 25%; position: absolute; bottom: 2%;">
+                <div class="popUpButton" onclick="togglePopUp()">cancel</div>
+                <div class="popUpButton" onclick="">upload</div>
+            </div>
         </div>
     </div>
     

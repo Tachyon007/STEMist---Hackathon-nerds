@@ -1,0 +1,48 @@
+body{
+    margin: 0px;
+    padding: 0px;   
+
+}
+
+
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 6vh;    
+
+    border-bottom: 1px solid black;
+
+    font-size: 3vmin;
+}
+
+.nav{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    background-color: aqua;
+}
+
+.headerTitle{
+    position: absolute;
+    width: max-content;
+
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5vmin;
+}
+
+.login{
+    position: absolute;
+    width: 10%;
+    right: 0%;
+
+    height: 100%;
+    text-align: center;
+    background-color: aqua;
+}
