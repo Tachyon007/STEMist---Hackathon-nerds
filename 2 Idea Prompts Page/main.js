@@ -1,25 +1,11 @@
-let exampleData = [
-    {
-        "Title": "Dungeon Crawler",
-        "Description": "Game where each room is randomly generated and the player must navigate through the levels gathering loot and killing enemies",
-        "Tags": [
-            "Backend",
-            "Frontend",
-            "Game",
-        ],
-        "projID": "" + Math.floor(Math.random() * 100000),
-    },
-    {
-        "Title": "Task Manager Application",
-        "Description": "Application that manages your tasks or stuff to do",
-        "Tags": [
-            "Backend",
-            "Frontend",
-            "Data"
-        ],
-        "projID": "" + Math.floor(Math.random() * 100000),
-    }
-]
+let exampleData = [];
+fetch('../data/projects.json').then((res)=>{
+    res.json().then((res)=>{
+        exampleData = res;
+        console.log("data loaded")
+    })
+})
+
 
 function displayResults(searchResArr){
     let container = document.getElementById("resContainer");
