@@ -49,58 +49,51 @@ body{
 
 
 .mainbox {
-    width: 40vw;
-    height: 35vh;
-    
+    width: 20vw;
+    height: 40vh;
     border-style: dotted;
     border-color: black;
     margin: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 
 #titlebox {
     width: 25vw;
-    height:10vh;
-    border: 5px solid green;
-    border-right-width: 0px;
-    padding: 5px;
+    height:5vh;
+    border: 1px solid green;
+    border-top-width: 2px;
+    border-left-width: 2px;
   }
-
-#infobox { 
-    width: 13vw;
-    height:10vh;
-    border: 5px solid green;
-    padding: 5px;
-  }
-
 #descbox {
     width: 25vw;
-    height:20vh;
-    border: 5px solid green;
-    border-right-width: 0px;
-    padding: 5px;
+    height:30vh;
+    border: 1px solid green;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
 }
-
-.boxcolumn{
-    flex-direction: column;
-    width: 13vw;
-    height: 20vh;
+#infobox { 
+    width: 10vw;
+    height:5vh;
+    border: 1px solid green;
+    border-right-width: 2px;
+    border-top-width: 2px;
+  }
+#imagebox{
+    width: 10vw;
+    height:25vh;
+    border: 1px solid green;
+    border-right-width: 2px;
 }
-
-#imagebox {
-    width: 13vw;
-    height: 15vh;
-    border: 5px solid blue;
-    padding: 5px;
-    border-bottom-width: 0;
- }
-
 #ratingbox{
-    width: 13vw;
-    height: 4vh;
-    border: 5px solid blue;
-    padding: 5px; 
- }
+    width: 10vw;
+    height: 4.8vh;
+    border: 1px solid green;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
 
+ }
+#project-container{
+    flex-direction: row;
+}
