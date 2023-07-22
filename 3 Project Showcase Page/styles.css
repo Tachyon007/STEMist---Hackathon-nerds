@@ -46,3 +46,61 @@ body{
     text-align: center;
     background-color: aqua;
 }
+
+
+.mainbox {
+    width: 40vw;
+    height: 35vh;
+    
+    border-style: dotted;
+    border-color: black;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+#titlebox {
+    width: 25vw;
+    height:10vh;
+    border: 5px solid green;
+    border-right-width: 0px;
+    padding: 5px;
+  }
+
+#infobox { 
+    width: 13vw;
+    height:10vh;
+    border: 5px solid green;
+    padding: 5px;
+  }
+
+#descbox {
+    width: 25vw;
+    height:20vh;
+    border: 5px solid green;
+    border-right-width: 0px;
+    padding: 5px;
+}
+
+.boxcolumn{
+    flex-direction: column;
+    width: 13vw;
+    height: 20vh;
+}
+
+#imagebox {
+    width: 13vw;
+    height: 15vh;
+    border: 5px solid blue;
+    padding: 5px;
+    border-bottom-width: 0;
+ }
+
+#ratingbox{
+    width: 13vw;
+    height: 4vh;
+    border: 5px solid blue;
+    padding: 5px; 
+ }
+
