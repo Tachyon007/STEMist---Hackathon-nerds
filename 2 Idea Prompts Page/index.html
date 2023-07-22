@@ -93,12 +93,13 @@
                 Upload new prompt
             </div>
 
-            <div>title:<br> <input type="text"></div>
-            <div>description:<br> <textarea style="width: 75%;"></textarea></div>
+            <div>title:<br> <input type="text" id="pTitle"></div>
+            <div>description:<br> <textarea style="width: 75%;" id="pDescription"></textarea></div>
+            <div>please enter some keywords (comma seperated):<br> <textarea style="width: 75%;" id="pTags"></textarea></div>
 
             <div style="width: 50%; left: 25%; position: absolute; bottom: 2%;">
                 <div class="popUpButton" onclick="togglePopUp()">cancel</div>
-                <div class="popUpButton" onclick="">upload</div>
+                <div class="popUpButton" onclick="handlePopUpSubmission()">upload</div>
             </div>
         </div>
     </div>
