@@ -135,3 +135,13 @@ function togglePopUp(){
         target.style.display = "block"
     }
 }
+
+
+function handlePopUpSubmission(){
+    let pTitle = document.getElementById("pTitle").value;
+    let pDescription = document.getElementById("pDescription").value;
+    let pTags = document.getElementById("pTags").value;
+
+
+    console.log(pTitle, pDescription, pTags)
+}
