@@ -142,6 +142,37 @@ function handlePopUpSubmission(){
     let pDescription = document.getElementById("pDescription").value;
     let pTags = document.getElementById("pTags").value;
 
+    pTags = pTags.replaceAll(" ", "")
+    pTags = pTags.split(",");
+    pTags = pTags.filter((e)=>{
+        return (e.length > 0)
+    })
 
-    console.log(pTitle, pDescription, pTags)
+    let newPrompt = {
+        "Title": pTitle,
+        "Description": pDescription,
+        "Tags": pTags,
+        "ProjectID": Math.floor(Math.random() * 100000000)
+    }
+    newPrompt = JSON.stringify(newPrompt);
+
+
+    fetch('https://ideaspark-hack.glitch.me/addProject', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: newPrompt
+    }).then((res) => {//loading
+        res.json().then((loadedResponse)=>{
+            console.log(loadedResponse)
+            exampleData = loadedResponse;
+
+        })
+    })
+
+
+    togglePopUp();
+
 }
