@@ -21,7 +21,7 @@ def addProject(title, desc, tags):
     # Combine existing df and entry_df
     df_proj = pd.concat([df_proj, df_entry], ignore_index=True)
     
-    df_proj.to_json('test.json', orient='records')
+    df_proj.to_json('data/projects.json', orient='records')
 
 #addProject("Title", "Description", "[Tags,Tags,Tags]")
 addProject("ungeon crawler", "filer hello my name is dan", ["filler", 'filler filler'])
