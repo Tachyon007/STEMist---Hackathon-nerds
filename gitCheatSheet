@@ -8,3 +8,4 @@ git push
 git branch
 git checkout {branch name}
 git merge {name of branch w/ changes you want}
+

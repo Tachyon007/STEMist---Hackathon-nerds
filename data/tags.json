@@ -6,9 +6,8 @@
         "tags": ["backend", "frontend", "game"]
     },
 
-    {"title": "task manager application",
-     "description":"application that manages your tasks or stuff to do",
-     "tags": ["backend", "frontend", "data"]
+    {   "title": "task manager application",
+        "description":"application that manages your tasks or stuff to do",
+        "tags": ["backend", "frontend", "data"]
     }
-
 ]
