@@ -33,57 +33,58 @@ def removeProject(title):
 
 
 #____________________________MAIN _______________________________#
-tags_string = """Web scraping
-Python
-Data extraction
-Data scraping
-Online prices
-E-commerce data
-Data mining
-BeautifulSoup
-Requests
-Parsing HTML
-Price comparison
-Data collection
-Automation
-Product prices
-Data analysis
-Data manipulation
-Data cleaning
-Data visualization
-Website data
-API integration
-Price tracking
-Data aggregation
-Price monitoring
-Web crawling
-Data harvesting
-Data processing
-Data storage
-CSV files
-JSON format
-Data presentation
-Data insights
-Online retailers
-Price fluctuations
-Historical data
-Scrapy framework
-Regular expressions
-Data export
-Data filtering
-Data exploration
-Data handling
-Price alerts
-Price prediction
-Data accuracy
-Data transformation
-Data normalization
-Data integration
-Data validation
-Price history
-Data reporting
-User-friendly interface"""
+tags_string = """AI
+Robotics
+Blockchain
+Cybersecurity
+Machine Learning
+Data Analysis
+Natural Language Processing
+Game Development
+Virtual Reality
+Augmented Reality
+Web Development
+Mobile Apps
+Cloud Computing
+Big Data
+Internet of Things (IoT)
+Cryptography
+Databases
+Algorithms
+Neural Networks
+Computer Vision
+Bioinformatics
+Chatbots
+Parallel Computing
+Data Mining
+Genetic Algorithms
+Computer Graphics
+Quantum Computing
+Network Security
+Wearable Technology
+Embedded Systems
+Compiler Design
+Artificial Life
+Fuzzy Logic
+Natural Computation
+Gesture Recognition
+Human-Computer Interaction (HCI)
+Geographical Information Systems (GIS)
+Computational Linguistics
+Distributed Systems
+Image Processing
+Recommender Systems
+Information Retrieval
+Speech Recognition
+Evolutionary Computation
+Social Network Analysis
+Internet Technologies
+Operating Systems
+Data Visualization
+Semantic Web
+E-commerce"""
 tags_list = tags_string.split("\n") # Use data_list to format 'Tags'
 
 # TEMPLATE ==> addProject("Title", "Description", "[Tags,Tags,Tags]")
 addProject("randy randy", "description stuffs ", tags_list)
+

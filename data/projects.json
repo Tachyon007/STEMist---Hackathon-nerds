@@ -7,7 +7,7 @@
             "Frontend",
             "Game"
         ],
-        "ProjectID":"1k44f245"
+        "ProjectID": "1k44f245"
     },
     {
         "Title": "Task Manager Application",
@@ -17,63 +17,7 @@
             "Frontend",
             "Data"
         ],
-        "ProjectID":"77g6a45f"
-    },
-    {
-        "Title": "Randy Randy",
-        "Description": "Description stuffs ",
-        "Tags": [
-            "Web Scraping",
-            "Python",
-            "Data Extraction",
-            "Data Scraping",
-            "Online Prices",
-            "E-Commerce Data",
-            "Data Mining",
-            "Beautifulsoup",
-            "Requests",
-            "Parsing Html",
-            "Price Comparison",
-            "Data Collection",
-            "Automation",
-            "Product Prices",
-            "Data Analysis",
-            "Data Manipulation",
-            "Data Cleaning",
-            "Data Visualization",
-            "Website Data",
-            "Api Integration",
-            "Price Tracking",
-            "Data Aggregation",
-            "Price Monitoring",
-            "Web Crawling",
-            "Data Harvesting",
-            "Data Processing",
-            "Data Storage",
-            "Csv Files",
-            "Json Format",
-            "Data Presentation",
-            "Data Insights",
-            "Online Retailers",
-            "Price Fluctuations",
-            "Historical Data",
-            "Scrapy Framework",
-            "Regular Expressions",
-            "Data Export",
-            "Data Filtering",
-            "Data Exploration",
-            "Data Handling",
-            "Price Alerts",
-            "Price Prediction",
-            "Data Accuracy",
-            "Data Transformation",
-            "Data Normalization",
-            "Data Integration",
-            "Data Validation",
-            "Price History",
-            "Data Reporting",
-            "User-Friendly Interface"
-        ],
-        "ProjectID":"6kd32bc4"
+        "ProjectID": "77g6a45f"
     }
+   
 ]
