@@ -1,4 +1,4 @@
-import pData from '/data/projects.json'assert {type: 'json'}; // Import main json
+/*import pData from '../data/projects.json'assert {type: 'json'}; // Import main json
 console.log(pData)
 console.log(pData[0])
 
@@ -8,7 +8,7 @@ let index = 0
 keys.forEach(key => {
     const output = document.getElementById('p'+key) // Get Element ID
     output.innerHTML = pData[index][key] // Assign Value
-})
+})*/
 
 
 
