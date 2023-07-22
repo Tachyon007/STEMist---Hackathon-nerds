@@ -2,13 +2,12 @@ import pData from '/data/projects.json'assert {type: 'json'}; // Import main jso
 console.log(pData)
 console.log(pData[0])
 
-// Dictionary Keys
-const keys = ['Title', 'Description', 'Tags']
+const keys = ['Title', 'Description', 'Tags'] // Dict keys
 // for index in pData, assign html element each key's value
 let index = 0
 keys.forEach(key => {
-    const output = document.getElementById('p'+key)
-    output.innerHTML = pData[index][key]
+    const output = document.getElementById('p'+key) // Get Element ID
+    output.innerHTML = pData[index][key] // Assign Value
 })
 
 

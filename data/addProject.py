@@ -33,7 +33,7 @@ def removeProject(title):
 
 
 #____________________________MAIN _______________________________#
-data_string = """Web scraping
+tags_string = """Web scraping
 Python
 Data extraction
 Data scraping
@@ -83,7 +83,7 @@ Data validation
 Price history
 Data reporting
 User-friendly interface"""
-data_list = data_string.split("\n") # Use data_list to format 'Tags'
+tags_list = tags_string.split("\n") # Use data_list to format 'Tags'
 
 # TEMPLATE ==> addProject("Title", "Description", "[Tags,Tags,Tags]")
-addProject("randy randy", "description stuffs ", data_list)
+addProject("randy randy", "description stuffs ", tags_list)
