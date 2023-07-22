@@ -122,3 +122,26 @@ function search(el, searchString){
     displayResults(res)
 
 }
+
+
+
+//popup
+function togglePopUp(){
+    let target = document.getElementById("popup");
+
+    if(target.style.display != "none"){
+        target.style.display = "none";
+    }else{
+        target.style.display = "block"
+    }
+}
+
+
+function handlePopUpSubmission(){
+    let pTitle = document.getElementById("pTitle").value;
+    let pDescription = document.getElementById("pDescription").value;
+    let pTags = document.getElementById("pTags").value;
+
+
+    console.log(pTitle, pDescription, pTags)
+}

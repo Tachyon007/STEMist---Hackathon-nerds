@@ -122,3 +122,49 @@ input:focus{
     display: grid;
     grid-template-columns: 6fr 1fr;
 }
+
+
+
+.addPromptB{
+    position: relative;
+    float: right;
+    font-size: 4vmin;
+
+    border: 1px solid black;
+
+    margin-right: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+
+}
+
+.popUpFormBack{
+    position: fixed;
+    z-index: 10;
+
+    top: 0%;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.708);
+}
+
+.popUpForm{
+    position: relative;
+    width: 50%;
+    height: 60%;
+
+    background-color: white;
+
+    left: 50%;
+    top: 50%;transform: translate(-50%, -50%);
+
+    font-size: 3vmin;
+    text-align: center;
+}
+
+.popUpButton{
+    float: left; 
+    width: 49%;
+    border: 1px solid black;
+}
