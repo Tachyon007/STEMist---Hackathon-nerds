@@ -5,4 +5,11 @@
         "description":"game where each room is randomly generated and the player must navigate through the levels gathering loot and killing enemies",
         "tags": ["backend", "frontend", "game"]
     }
+
+    {"title": "task manager application",
+     "description":"application that manages your tasks or stuff to do",
+     "tags": ["backend", "frontend", "data"]
+    
+
+    }
 ]
