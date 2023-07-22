@@ -122,3 +122,16 @@ function search(el, searchString){
     displayResults(res)
 
 }
+
+
+
+//popup
+function togglePopUp(){
+    let target = document.getElementById("popup");
+
+    if(target.style.display != "none"){
+        target.style.display = "none";
+    }else{
+        target.style.display = "block"
+    }
+}
