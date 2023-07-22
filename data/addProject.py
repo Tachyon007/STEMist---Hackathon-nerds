@@ -1,9 +1,5 @@
 import pandas as pd # Import pandas package
 
-# Convert json to csv
-# projects = pd.read_json('data\oldProjects.json')
-# projects.to_json('data/projects.json', orient='records')
-
 def addProject(title, desc, tags):
     # Uppercase
     title = title.title()
@@ -24,6 +20,6 @@ def addProject(title, desc, tags):
     df_proj.to_json('data/projects.json', orient='records')
 
 #addProject("Title", "Description", "[Tags,Tags,Tags]")
-addProject("ungeon crawler", "filer hello my name is dan", ["filler", 'filler filler'])
+addProject("randy randy", "description stuffs ", ["tag", "tag", "tag","racism"])
 
 # projects.to_sql()
