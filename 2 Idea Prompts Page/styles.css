@@ -50,9 +50,7 @@ body{
 
 .searchContainer{
     position: relative;
-    height: 30vh;
-
-    background-color: aquamarine;
+    height: 18vh;
 }
 
 .searchbarGrid{
@@ -63,7 +61,7 @@ body{
     transform: translate(-50%, -50%);
 
     width: 50%;
-    height: 25%;
+    height: 40%;
 
     display: grid;
     grid-template-columns: 1fr 50fr;
@@ -98,3 +96,27 @@ input:focus{
     outline: none;
 }
 
+
+.resultContainer{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.searchRes{
+    position: relative;
+    width: 60%;
+    min-height: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin-top: 5%;
+
+    border: 1px solid black;
+    border-radius: 1rem;
+
+    padding-left: 1%;
+
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
