@@ -3,6 +3,11 @@ fetch('../data/projects.json').then((res)=>{
     res.json().then((res)=>{
         exampleData = res;
         console.log(res, "data loaded")
+
+        //searchFromURL
+        let urlParameters = window.location.search;
+        urlParameters = urlParameters.slice(1);
+        search(null, urlParameters)
     })
 })
 
@@ -117,8 +122,3 @@ function search(el, searchString){
     displayResults(res)
 
 }
-
-//searchFromURL
-let urlParameters = window.location.search;
-urlParameters = urlParameters.slice(1);
-search(null, urlParameters)
