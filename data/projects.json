@@ -1,30 +1,20 @@
 [
     {
-        "Title": "dungeon crawler",
-        "Description": "game where each room is randomly generated and the player must navigate through the levels gathering loot and killing enemies",
+        "Title": "Dungeon Crawler",
+        "Description": "Game where each room is randomly generated and the player must navigate through the levels gathering loot and killing enemies",
         "Tags": [
-            "backend",
-            "frontend",
-            "game"
+            "Backend",
+            "Frontend",
+            "Game"
         ]
     },
     {
-        "Title": "task manager application",
-        "Description": "application that manages your tasks or stuff to do",
+        "Title": "Task Manager Application",
+        "Description": "Application that manages your tasks or stuff to do",
         "Tags": [
-            "backend",
-            "frontend",
-            "data"
-        ]
-    },
-    {
-        "Title": "Randy Randy",
-        "Description": "Description stuffs ",
-        "Tags": [
-            "Tag",
-            "Tag",
-            "Tag",
-            "Racism"
+            "Backend",
+            "Frontend",
+            "Data"
         ]
     }
 ]
