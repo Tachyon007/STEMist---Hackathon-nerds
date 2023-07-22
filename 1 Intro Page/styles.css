@@ -70,7 +70,17 @@ body{
     grid-template-columns: 10fr 1fr 10fr;
 
     background-color: aqua;
+    font-size: 4vmin;
 }
+
+.gridSection p{
+    position: relative;
+    width: 75%;
+    min-height: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 .cButton{
     position: relative;
@@ -78,8 +88,73 @@ body{
     width: max-content;
     transform: translateX(-50%);
 
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    font-size: 5vmin;
+
     border: 1px solid black;
 }
+
+
+
+
+
+.tagGrid{
+    position: relative;
+
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+
+    width: 70%;
+    height: 50vh;
+    left: 15%;
+
+    margin-top: 2.5%;
+
+    border-radius: 1rem;
+    border: 1px solid black;
+
+    font-size: 3.5vmin;
+
+}
+
+.tagGrid div{
+    width: max-content;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-right: 0.5%;
+    text-align: center;
+    float: left;
+
+    user-select: none; 
+
+    border: 1px solid black;
+    border-radius: 1rem;
+
+    transition-duration: 0.5s;
+}
+
+.tagGrid div:hover{
+   border-radius: 0;
+}
+
+.tagGridSelected{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -101,4 +176,12 @@ body{
 .delay1{
     opacity: 0;
     animation-delay: 0.5s;
+}
+.delay2{
+    opacity: 0;
+    animation-delay: 1.5s;
+}
+.delay3{
+    opacity: 0;
+    animation-delay: 2.5s;
 }
