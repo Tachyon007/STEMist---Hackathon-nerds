@@ -216,3 +216,11 @@ img {
         top: 50%;
         transform: translate(-50%, -50%);
     }
+
+    .hover1{
+        transition-duration: 0.5s;
+    }
+    
+    .hover1:hover{
+        box-shadow: inset 0px 0px 10px 2px rgba(0,0,0,0.75);
+    }
