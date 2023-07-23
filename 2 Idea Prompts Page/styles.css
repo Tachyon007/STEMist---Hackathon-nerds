@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 body{
     margin: 0px;
     padding: 0px;   
 
 }
-
-
 
 .header{
     position: relative;
@@ -31,10 +31,19 @@ body{
 .headerTitle{
     position: absolute;
     width: max-content;
-
     left: 50%;
     transform: translateX(-50%);
-    font-size: 5vmin;
+    font-size: 8vmin;
+}
+.fancy-text{
+    font-family: 'Satisfy', cursive;
+}
+.btn-outline-success{
+    color: darkblue !important;
+    border-color: darkblue !important;
+}
+.btn{
+    font-size: inherit !important;
 }
 
 .login{

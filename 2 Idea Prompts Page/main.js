@@ -1,23 +1,41 @@
 let exampleData = [];
-fetch('../data/projects.json').then((res)=>{
-    res.json().then((res)=>{
-        exampleData = res;
-        console.log(res, "data loaded")
+let useLocalJsonFile = false;
+if(useLocalJsonFile){
+    //LOCAL projects.json File
+    fetch('../data/projects.json').then((res)=>{
+        res.json().then((res)=>{
+            exampleData = res;
+            console.log(res, "data loaded")
 
-        //searchFromURL
-        let urlParameters = window.location.search;
-        urlParameters = urlParameters.slice(1);
-        search(null, urlParameters)
+            //searchFromURL
+            let urlParameters = window.location.search;
+            urlParameters = urlParameters.slice(1);
+            if(urlParameters.length < 1){urlParameters = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p'}
+            search(null, urlParameters)
+        })
     })
-})
+}else{
+    // WORKING SERVER FETCH -- UNCOMMENT WHENEVER WE'RE READY TO TEST SERVERS
+    fetch('https://ideaspark-hack.glitch.me/allProjects', {
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        method: 'GET',
+    }).then((res) => {//loading
+        res.json().then((loadedResponse)=>{
+            console.log(loadedResponse)
+            exampleData = loadedResponse;
 
-// const keys = ['Title', 'Description', 'Tags'] // Dict keys
-// // for index in pData, assign html element each key's value
-// let index = 0
-// keys.forEach(key => {
-//     const output = document.getElementById('p'+key) // Get Element ID
-//     output.innerHTML = pData[index][key] // Assign Value
-// })
+            //searchFromURL
+            let urlParameters = window.location.search;
+            urlParameters = urlParameters.slice(1);
+            if(urlParameters.length < 1){urlParameters = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p'}
+            search(null, urlParameters)
+        })
+    })
+
+}
 
 function displayResults(searchResArr){
     let container = document.getElementById("resContainer");
@@ -59,6 +77,9 @@ function displayResults(searchResArr){
         let sp2 = document.createElement("span");
         sp2.className = "material-symbols-outlined"
         sp2.innerHTML = "arrow_forward"
+        sp2.onclick = ()=>{
+            location.href = '../3 Project Showcase Page/index.html?' + searchResArr[i][0].Title;
+        }
         hc2.appendChild(sp2);
         c.appendChild(hc2);
         
@@ -123,8 +144,6 @@ function search(el, searchString){
 
 }
 
-
-
 //popup
 function togglePopUp(){
     let target = document.getElementById("popup");
@@ -134,4 +153,45 @@ function togglePopUp(){
     }else{
         target.style.display = "block"
     }
+}
+
+function handlePopUpSubmission(){
+    let pTitle = document.getElementById("pTitle").value;
+    let pDescription = document.getElementById("pDescription").value;
+    let pTags = document.getElementById("pTags").value;
+
+    pTags = pTags.replaceAll(" ", "")
+    pTags = pTags.split(",");
+    pTags = pTags.filter((e)=>{
+        return (e.length > 0)
+    })
+
+    let newPrompt = {
+        "Title": pTitle,
+        "Description": pDescription,
+        "Tags": pTags,
+        "ProjectID": Math.floor(Math.random() * 100000000)
+    }
+    newPrompt = JSON.stringify(newPrompt);
+
+
+    fetch('https://ideaspark-hack.glitch.me/addProject', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: newPrompt
+    }).then((res) => {//loading
+        res.json().then((loadedResponse)=>{
+            console.log(loadedResponse)
+            exampleData = loadedResponse;
+
+            search(null, pDescription)
+        })
+    })
+
+
+    togglePopUp();
+
 }

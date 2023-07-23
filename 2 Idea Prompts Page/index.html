@@ -1,64 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IdeaSpark</title>
 
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#navi-bar").load("../navbar.html");
+        });
+    </script>
     <script src="./main.js" defer></script>
-
 </head>
+
 <body>
+    <!-- navbar -->
+    <div id="navi-bar"></div>
+    <!--  -->
     
-    <div class="header appear delay3">
-        <div class="nav">
-            <a href="../1 Intro Page/index.html">home</a>
-            <a href="../2 Idea Prompts Page/index.html">search</a>
-            <a href="../3 Project Showcase Page/index.html">projects</a>
-        </div>
-
-        <div class="headerTitle">
-            ideaspark
-        </div>
-
-        <div class="login"> 
-            Log In
-        </div>
-    </div>
-
     <div class="searchContainer">
         <div class="searchbarGrid">
             <span class="material-symbols-outlined iconHelper" style="font-size: 5vmin;">
                 search
             </span>
-                                
+
             <input type="text" class="searchBar" onchange="search(this)">
         </div>
-
         <div class="addPromptB" onclick="togglePopUp()">Add Prompt</div>
     </div>
 
     <div class="resultContainer" id="resContainer">
-        <div class="searchRes">
-            <p>Proj proj</p>
-            <div  style="border-left: 1px solid black;">
-                <span class="material-symbols-outlined">
-                    favorite
-                </span>
-            </div>
-            <p>This is a cool project that does a thing</p>
-            <div style="border-left: 1px solid black; border-top: 1px solid black;">
-                <span class="material-symbols-outlined">
-                    arrow_forward
-                </span>
-            </div>
-
-        </div>
-        <div class="searchRes">
-        
-        </div>
+        <div style="text-align: center;">...loading</div>
     </div>
 
 
@@ -68,15 +49,17 @@
                 Upload new prompt
             </div>
 
-            <div>title:<br> <input type="text"></div>
-            <div>description:<br> <textarea style="width: 75%;"></textarea></div>
+            <div>title:<br> <input type="text" id="pTitle"></div>
+            <div>description:<br> <textarea style="width: 75%;" id="pDescription"></textarea></div>
+            <div>please enter some keywords (comma seperated):<br> <textarea style="width: 75%;" id="pTags"></textarea>
+            </div>
 
             <div style="width: 50%; left: 25%; position: absolute; bottom: 2%;">
                 <div class="popUpButton" onclick="togglePopUp()">cancel</div>
-                <div class="popUpButton" onclick="">upload</div>
+                <div class="popUpButton" onclick="handlePopUpSubmission()">upload</div>
             </div>
         </div>
     </div>
-    
 </body>
+
 </html>
