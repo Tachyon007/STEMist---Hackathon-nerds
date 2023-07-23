@@ -16,6 +16,10 @@ if(useLocalJsonFile){
 }else{
     // WORKING SERVER FETCH -- UNCOMMENT WHENEVER WE'RE READY TO TEST SERVERS
     fetch('https://ideaspark-hack.glitch.me/allProjects', {
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
         method: 'GET',
     }).then((res) => {//loading
         res.json().then((loadedResponse)=>{
