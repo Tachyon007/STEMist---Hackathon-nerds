@@ -94,5 +94,7 @@ body{
 
  }
 #project-container{
+
+    padding-top: 10%;
     flex-direction: row;
 }
