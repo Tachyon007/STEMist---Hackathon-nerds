@@ -1,26 +1,35 @@
 let exampleData = [];
-fetch('../data/projects.json').then((res)=>{
-    res.json().then((res)=>{
-        exampleData = res;
-        console.log(res, "data loaded")
+let useLocalJsonFile = false;
+if(useLocalJsonFile){
+    //LOCAL projects.json File
+    fetch('../data/projects.json').then((res)=>{
+        res.json().then((res)=>{
+            exampleData = res;
+            console.log(res, "data loaded")
 
-        //searchFromURL
-        let urlParameters = window.location.search;
-        urlParameters = urlParameters.slice(1);
-        search(null, urlParameters)
+            //searchFromURL
+            let urlParameters = window.location.search;
+            urlParameters = urlParameters.slice(1);
+            search(null, urlParameters)
+        })
     })
-})
+}else{
+    // WORKING SERVER FETCH -- UNCOMMENT WHENEVER WE'RE READY TO TEST SERVERS
+    fetch('https://ideaspark-hack.glitch.me/allProjects', {
+        method: 'GET',
+    }).then((res) => {//loading
+        res.json().then((loadedResponse)=>{
+            console.log(loadedResponse)
+            exampleData = loadedResponse;
 
-// WORKING SERVER FETCH -- UNCOMMENT WHENEVER WE'RE READY TO TEST SERVERS
-
-/*fetch('https://ideaspark-hack.glitch.me/allProjects', {
-    method: 'GET',
-}).then((res) => {//loading
-    res.json().then((loadedResponse)=>{
-        console.log(loadedResponse)
-        exampleData = loadedResponse;
+            //searchFromURL
+            let urlParameters = window.location.search;
+            urlParameters = urlParameters.slice(1);
+            search(null, urlParameters)
+        })
     })
-})*/
+
+}
 
 // const keys = ['Title', 'Description', 'Tags'] // Dict keys
 // // for index in pData, assign html element each key's value
@@ -179,6 +188,8 @@ function handlePopUpSubmission(){
         res.json().then((loadedResponse)=>{
             console.log(loadedResponse)
             exampleData = loadedResponse;
+
+            search(null, pDescription)
         })
     })
 
