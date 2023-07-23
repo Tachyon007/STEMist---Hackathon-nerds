@@ -38,6 +38,13 @@ body{
 .fancy-text{
     font-family: 'Satisfy', cursive;
 }
+.btn-outline-success{
+    color: darkblue !important;
+    border-color: darkblue !important;
+}
+.btn{
+    font-size: inherit !important;
+}
 
 .login{
     position: absolute;
