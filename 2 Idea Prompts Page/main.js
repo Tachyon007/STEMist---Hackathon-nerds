@@ -1,5 +1,5 @@
 let exampleData = [];
-let useLocalJsonFile = true;
+let useLocalJsonFile = false;
 if(useLocalJsonFile){
     //LOCAL projects.json File
     fetch('../data/projects.json').then((res)=>{
@@ -30,14 +30,6 @@ if(useLocalJsonFile){
     })
 
 }
-
-// const keys = ['Title', 'Description', 'Tags'] // Dict keys
-// // for index in pData, assign html element each key's value
-// let index = 0
-// keys.forEach(key => {
-//     const output = document.getElementById('p'+key) // Get Element ID
-//     output.innerHTML = pData[index][key] // Assign Value
-// })
 
 function displayResults(searchResArr){
     let container = document.getElementById("resContainer");
@@ -146,8 +138,6 @@ function search(el, searchString){
 
 }
 
-
-
 //popup
 function togglePopUp(){
     let target = document.getElementById("popup");
@@ -158,7 +148,6 @@ function togglePopUp(){
         target.style.display = "block"
     }
 }
-
 
 function handlePopUpSubmission(){
     let pTitle = document.getElementById("pTitle").value;
