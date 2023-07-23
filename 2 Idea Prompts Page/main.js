@@ -79,6 +79,9 @@ function displayResults(searchResArr){
         let sp2 = document.createElement("span");
         sp2.className = "material-symbols-outlined"
         sp2.innerHTML = "arrow_forward"
+        sp2.onclick = ()=>{
+            location.href = '../3 Project Showcase Page/index.html?' + searchResArr[i][0].Title;
+        }
         hc2.appendChild(sp2);
         c.appendChild(hc2);
         
