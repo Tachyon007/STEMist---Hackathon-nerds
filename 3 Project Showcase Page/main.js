@@ -25,18 +25,20 @@ function togglePopUp(){
 
 function handleProjectSubmission(){
     let fName = document.getElementById("fName").value;
+    let projPrompt = currentProjTitle;
     let fProjName = document.getElementById("fProjName").value;
     let fDesc = document.getElementById("fDesc").value;
     let fImg = document.getElementById("fImg");
+
 
     let reader = new FileReader();
     reader.readAsDataURL(fImg.files[0]);
 
     reader.onloadend = function() {
-        console.log(fName, fProjName, fDesc,)
+        console.log(fName, fProjName, projPrompt, fDesc,)
         console.log("img --> char length : " + reader.result.length);
     
-      /*fetch('', {
+      /*fetch('https://ideaspark-hack.glitch.me/addPersonalProject', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
