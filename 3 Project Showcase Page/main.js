@@ -22,3 +22,7 @@ function togglePopUp(){
         target.style.display = "block"
     }
 }
+
+function handleProjectSubmission(){
+    
+}
