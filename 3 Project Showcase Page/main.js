@@ -73,7 +73,7 @@ function renderloadedContent(objArr){
 
     if(objArr.length == 0){
         let m = document.createElement("div");
-        m.innerHTML = "<h3 style='text-align:center; width:90vw;'>No results found<h3>"
+        m.innerHTML = "<h3 style='text-align:center; width:90vw; margin-top:15vmin;'>No results found<h3>"
         container.appendChild(m);
     }
 

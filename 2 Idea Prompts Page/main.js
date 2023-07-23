@@ -47,6 +47,7 @@ function displayResults(searchResArr){
     if(searchResArr.length == 0){
         let c = document.createElement("h2");
         c.style.textAlign = "center"
+        c.style.marginTop = "15vmin"
         c.innerHTML = "No results found"
 
         container.appendChild(c);

@@ -177,6 +177,8 @@ img {
     border: 1px solid black;
     border-radius: 1rem;
 
+    margin-top: 4%;
+
     text-align: center;
 
     display: grid;
