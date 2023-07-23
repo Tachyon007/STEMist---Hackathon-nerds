@@ -90,23 +90,16 @@ function renderloadedContent(objArr){
 
         let d4 = document.createElement("div");
         d4.id = "imagebox";
-       /* let image = document.createElement("img");
+        let image = document.createElement("img");
         d4.appendChild(image);
-        image.src = objArr[i].image;
-        image.alt = "";
-
-        image.onload = () =>{
-            image.src = objArr[i].image;
-            alert(1)
-        }*/
+        image.src = objArr[i].image.replaceAll('"', '');
         
-
-
+        
         console.log(objArr[i].image)
 
         let d5 = document.createElement("div");
         d5.id = "ratingbox";
-        d5.innerHTML = "";
+        d5.innerHTML = "github link?";
 
         m.appendChild(d1);
         m.appendChild(d2);
