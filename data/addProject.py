@@ -33,58 +33,16 @@ def removeProject(title):
 
 
 #____________________________MAIN _______________________________#
-tags_string = """AI
-Robotics
-Blockchain
-Cybersecurity
-Machine Learning
-Data Analysis
-Natural Language Processing
-Game Development
-Virtual Reality
-Augmented Reality
-Web Development
-Mobile Apps
-Cloud Computing
-Big Data
-Internet of Things (IoT)
-Cryptography
-Databases
-Algorithms
-Neural Networks
-Computer Vision
-Bioinformatics
-Chatbots
-Parallel Computing
-Data Mining
-Genetic Algorithms
-Computer Graphics
-Quantum Computing
-Network Security
-Wearable Technology
-Embedded Systems
-Compiler Design
-Artificial Life
-Fuzzy Logic
-Natural Computation
-Gesture Recognition
-Human-Computer Interaction (HCI)
-Geographical Information Systems (GIS)
-Computational Linguistics
-Distributed Systems
-Image Processing
-Recommender Systems
-Information Retrieval
-Speech Recognition
-Evolutionary Computation
-Social Network Analysis
-Internet Technologies
-Operating Systems
-Data Visualization
-Semantic Web
-E-commerce"""
+tags_string = """api
+map
+recommendation
+machine learning
+analysis
+assistance
+website
+backend
+frontend"""
 tags_list = tags_string.split("\n") # Use data_list to format 'Tags'
 
 # TEMPLATE ==> addProject("Title", "Description", "[Tags,Tags,Tags]")
-addProject("randy randy", "description stuffs ", tags_list)
-
+addProject("food distribution route / world hunger tool", "create a tool that looks at major producers of grains and other base foods and try to optimally route supplies to the nearest place where hunger is a prevelant issue.", tags_list)
