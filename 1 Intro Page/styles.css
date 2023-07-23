@@ -4,8 +4,6 @@ body{
 
 }
 
-
-
 .header{
     position: relative;
     width: 100%;
@@ -36,10 +34,6 @@ body{
     text-align: center;
     background-color: aqua;
 }
-
-
-
-
 
 .welcomeContainer{
     position: relative;
@@ -98,10 +92,6 @@ body{
     border: 1px solid black;
 }
 
-
-
-
-
 .tagGrid{
     position: relative;
 
@@ -125,6 +115,7 @@ body{
 
 .tagGrid div{
     width: max-content;
+    margin-top: 1%;
     padding-left: 1%;
     padding-right: 1%;
     margin-right: 0.5%;

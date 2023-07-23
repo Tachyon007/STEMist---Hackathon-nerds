@@ -33,57 +33,16 @@ def removeProject(title):
 
 
 #____________________________MAIN _______________________________#
-tags_string = """Web scraping
-Python
-Data extraction
-Data scraping
-Online prices
-E-commerce data
-Data mining
-BeautifulSoup
-Requests
-Parsing HTML
-Price comparison
-Data collection
-Automation
-Product prices
-Data analysis
-Data manipulation
-Data cleaning
-Data visualization
-Website data
-API integration
-Price tracking
-Data aggregation
-Price monitoring
-Web crawling
-Data harvesting
-Data processing
-Data storage
-CSV files
-JSON format
-Data presentation
-Data insights
-Online retailers
-Price fluctuations
-Historical data
-Scrapy framework
-Regular expressions
-Data export
-Data filtering
-Data exploration
-Data handling
-Price alerts
-Price prediction
-Data accuracy
-Data transformation
-Data normalization
-Data integration
-Data validation
-Price history
-Data reporting
-User-friendly interface"""
+tags_string = """api
+map
+recommendation
+machine learning
+analysis
+assistance
+website
+backend
+frontend"""
 tags_list = tags_string.split("\n") # Use data_list to format 'Tags'
 
 # TEMPLATE ==> addProject("Title", "Description", "[Tags,Tags,Tags]")
-addProject("randy randy", "description stuffs ", tags_list)
+addProject("food distribution route / world hunger tool", "create a tool that looks at major producers of grains and other base foods and try to optimally route supplies to the nearest place where hunger is a prevelant issue.", tags_list)
