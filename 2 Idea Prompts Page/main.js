@@ -11,6 +11,17 @@ fetch('../data/projects.json').then((res)=>{
     })
 })
 
+// WORKING SERVER FETCH -- UNCOMMENT WHENEVER WE'RE READY TO TEST SERVERS
+
+/*fetch('https://ideaspark-hack.glitch.me/allProjects', {
+    method: 'GET',
+}).then((res) => {//loading
+    res.json().then((loadedResponse)=>{
+        console.log(loadedResponse)
+        exampleData = loadedResponse;
+    })
+})*/
+
 // const keys = ['Title', 'Description', 'Tags'] // Dict keys
 // // for index in pData, assign html element each key's value
 // let index = 0
@@ -168,7 +179,6 @@ function handlePopUpSubmission(){
         res.json().then((loadedResponse)=>{
             console.log(loadedResponse)
             exampleData = loadedResponse;
-
         })
     })
 
