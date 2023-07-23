@@ -1,5 +1,5 @@
 let exampleData = [];
-let useLocalJsonFile = false;
+let useLocalJsonFile = true;
 if(useLocalJsonFile){
     //LOCAL projects.json File
     fetch('../data/projects.json').then((res)=>{
