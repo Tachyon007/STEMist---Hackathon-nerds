@@ -96,13 +96,7 @@ body{
     border-bottom-width: 2px;
 
  }
-#project-container{
-    flex-direction: row;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 8%;
-    font-size: 3.2vmin;
-}
+
 
 
 #projSubmitButton{
@@ -154,7 +148,71 @@ body{
 
 
 img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
+
+
+
+
+  #project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    padding: 5%;
+    font-size: 3.2vmin;
+}
+
+
+  .projProfile {
+
+    position: relative;
+    width: 35vw;
+    left: 7.5vw;
+    height: 50vh;
+    top: 5vw;
+    padding: 1%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 1rem;
+
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+
+
+
+    .redHover{
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    
+    .redHover:hover{
+        color: red;
+        text-shadow: 0px 0px 9px rgba(255, 0, 0, 1);
+    }
+    
+    .blueHover{
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    
+    .blueHover:hover{
+        color: blue;
+        text-shadow: 0px 0px 9px rgb(0, 38, 255);
+    }
+
+
+    .center1{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }

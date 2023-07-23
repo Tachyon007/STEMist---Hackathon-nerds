@@ -71,40 +71,50 @@ function renderloadedContent(objArr){
         container.removeChild(container.firstChild);
     }
 
+    if(objArr.length == 0){
+        let m = document.createElement("div");
+        m.innerHTML = "<h3 style='text-align:center; width:90vw;'>No results found<h3>"
+        container.appendChild(m);
+    }
+
     for(let i = 0; i < objArr.length; i++){
 
         let m = document.createElement("div");
-        m.className = "mainbox";
-
-        let d1 = document.createElement("div");
-        d1.id = "titlebox";
-        d1.innerText = objArr[i].Title;
-
-        let d2 = document.createElement("div");
-        d2.id = "descbox";
-        d2.innerHTML = objArr[i].Description;
-
-        let d3 = document.createElement("div");
-        d3.id = "infobox";
-        d3.innerHTML = objArr[i].author;
+        m.className = "projProfile";
 
         let d4 = document.createElement("div");
-        d4.id = "imagebox";
+        d4.id = "imageboxK";
+        d4.style = "grid-row: span 2;";
         let image = document.createElement("img");
         d4.appendChild(image);
         image.src = objArr[i].image.replaceAll('"', '');
-        
-        
-        console.log(objArr[i].image)
 
+        let d1 = document.createElement("div");
+        d1.id = "titleboxK";
+        d1.style = "position: relative;";
+        d1.innerHTML = "<p class='center1'>" + objArr[i].Title + "</p>";
+
+        let d3 = document.createElement("div");
+        d3.id = "infoboxK";
+        d3.style = "position: relative;";
+        d3.innerHTML = "<p class='center1'>author: <br>" + objArr[i].author  + "</p>";
+
+        let d2 = document.createElement("div");
+        d2.id = "descboxK";
+        d2.style = "position: relative; text-align:left";
+        d2.innerHTML = "<p class='center1' style='width:100%; font-size: 2.5vmin'>&nbsp;&nbsp;&nbsp;&nbsp;" + objArr[i].Description + "</p>";
+        
         let d5 = document.createElement("div");
-        d5.id = "ratingbox";
-        d5.innerHTML = "github link?";
+        d5.id = "ratingboxK";
+        d5.style = "position: relative;";
+        d5.innerHTML = `<span class="material-symbols-outlined center1 blueHover" style="font-size: 10vmin;">
+                            arrow_forward
+                        </span>`;
 
-        m.appendChild(d1);
-        m.appendChild(d2);
-        m.appendChild(d3);
         m.appendChild(d4);
+        m.appendChild(d1);
+        m.appendChild(d3);
+        m.appendChild(d2);
         m.appendChild(d5);
 
         container.appendChild(m);
@@ -130,3 +140,6 @@ function loadProjects(){
             })
       })
 }
+
+//load all relevant projects when page loads
+loadProjects();

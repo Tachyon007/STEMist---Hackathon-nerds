@@ -22,7 +22,8 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid black;
 }
 
 .login{
@@ -32,7 +33,7 @@ body{
 
     height: 100%;
     text-align: center;
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
 }
 
 .welcomeContainer{
