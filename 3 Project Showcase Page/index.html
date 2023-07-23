@@ -84,15 +84,15 @@
                 Upload your project!
             </div>
 
-            <div>name:<br> <input type="text" id=""></div>
-            <div>youre projects name:<br> <input type="text" id=""></div>
-            <div>description:<br> <textarea style="width: 75%;" id=""></textarea></div>
-            <div>image:<br> <input type="file" accept=".png" id="myInput"></div>
+            <div>name:<br> <input type="text" id="fName"></div>
+            <div>youre projects name:<br> <input type="text" id="fProjName"></div>
+            <div>description:<br> <textarea style="width: 75%;" id="fDesc"></textarea></div>
+            <div>image:<br> <input type="file" accept=".png" id="fImg"></div>
 
 
             <div style="width: 50%; left: 25%; position: absolute; bottom: 2%;">
                 <div class="popUpButton" onclick="togglePopUp()">cancel</div>
-                <div class="popUpButton" onclick="">upload</div>
+                <div class="popUpButton" onclick="handleProjectSubmission()">upload</div>
             </div>
         </div>
     </div>

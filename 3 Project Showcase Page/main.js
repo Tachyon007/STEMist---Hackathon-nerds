@@ -24,7 +24,39 @@ function togglePopUp(){
 }
 
 function handleProjectSubmission(){
+    let fName = document.getElementById("fName").value;
+    let fProjName = document.getElementById("fProjName").value;
+    let fDesc = document.getElementById("fDesc").value;
+    let fImg = document.getElementById("fImg");
+
+    let reader = new FileReader();
+    reader.readAsDataURL(fImg.files[0]);
+
+    reader.onloadend = function() {
+        console.log(fName, fProjName, fDesc,)
+        console.log("img --> char length : " + reader.result.length);
     
+      /*fetch('', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          authorName: fName,
+          projName: fProjName,
+          description: fDesc,
+
+          images: JSON.stringify(reader.result),
+        })
+      }).then((res) => {
+        console.log(res);
+      })*/
+    
+    }
+
+    togglePopUp();
+
 }
 
 //load relevant pages
