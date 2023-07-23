@@ -1,5 +1,5 @@
 let exampleData = [];
-let useLocalJsonFile = true;
+let useLocalJsonFile = false;
 if(useLocalJsonFile){
     //LOCAL projects.json File
     fetch('../data/projects.json').then((res)=>{
@@ -10,6 +10,7 @@ if(useLocalJsonFile){
             //searchFromURL
             let urlParameters = window.location.search;
             urlParameters = urlParameters.slice(1);
+            if(urlParameters.length < 1){urlParameters = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p'}
             search(null, urlParameters)
         })
     })
@@ -29,6 +30,7 @@ if(useLocalJsonFile){
             //searchFromURL
             let urlParameters = window.location.search;
             urlParameters = urlParameters.slice(1);
+            if(urlParameters.length < 1){urlParameters = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p'}
             search(null, urlParameters)
         })
     })
