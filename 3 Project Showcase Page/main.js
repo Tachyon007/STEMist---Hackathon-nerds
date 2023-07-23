@@ -26,3 +26,5 @@ function togglePopUp(){
 function handleProjectSubmission(){
     
 }
+
+//load relevant pages
