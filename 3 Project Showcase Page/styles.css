@@ -51,12 +51,15 @@ body{
 .mainbox {
     width: 20vw;
     height: 40vh;
-    border-style: dotted;
-    border-color: black;
+    /*border-style: dotted;
+    border-color: black;*/
     margin: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+
+    position: relative;
+    left: 5vw;
   }
 #titlebox {
     width: 25vw;
@@ -94,7 +97,9 @@ body{
 
  }
 #project-container{
-
-    padding-top: 10%;
     flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5%;
+    font-size: 3.2vmin;
 }
