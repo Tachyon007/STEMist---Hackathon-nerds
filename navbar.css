@@ -25,7 +25,8 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid black;
 }
 
 .headerTitle{
@@ -39,9 +40,16 @@ body{
     font-family: 'Satisfy', cursive;
 }
 .btn-outline-success{
-    color: darkblue !important;
-    border-color: darkblue !important;
+
 }
 .btn{
     font-size: inherit !important;
+    transition-duration: 0.5s;
+    color: darkblue !important;
+    border-color: darkblue !important;
 }
+
+.btn:hover{
+    background-color: rgba(0, 0, 139, 0.482);
+}
+

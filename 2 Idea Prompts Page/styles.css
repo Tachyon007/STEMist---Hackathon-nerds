@@ -16,6 +16,13 @@ body{
     font-size: 3vmin;
 }
 
+.center1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .nav{
     position: absolute;
     width: 25%;
@@ -175,3 +182,35 @@ input:focus{
     width: 49%;
     border: 1px solid black;
 }
+
+
+
+.redHover{
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.redHover:hover{
+    color: red;
+    text-shadow: 0px 0px 9px rgba(255, 0, 0, 1);
+}
+
+.blueHover{
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.blueHover:hover{
+    color: blue;
+    text-shadow: 0px 0px 9px rgb(0, 38, 255);
+}
+
+
+.hover1{
+    transition-duration: 0.5s;
+}
+
+.hover1:hover{
+    box-shadow: inset 0px 0px 10px 2px rgba(0,0,0,0.75);
+}
+

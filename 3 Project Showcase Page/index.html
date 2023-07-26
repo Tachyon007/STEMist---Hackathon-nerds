@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script src="./main.js" defer></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -26,54 +27,19 @@
         <div style="float: left;" id="currProjTitle">  [Proj Name]</div>
     </div>
 
-    <div id="projSubmitButton" onclick="togglePopUp()">
+    <div id="projSubmitButton" onclick="togglePopUp()" class="hover1">
         Submit Prompt Project
     </div>
 
-    <div id=project-container>
-        <div class="mainbox">
-            <div id="titlebox">
-                Title:
-            </div>
-
-            <div id="descbox">
-                Description:
-            </div>
-
-            <div id="infobox">
-                By:
-            </div>
-
-            <div id="imagebox">
-                IMG
-            </div>
-
-            <div id="ratingbox">
-                Rating:
-            </div>
+    <div id="project-container">
+        <div class="">
+            
         </div>
-
-        <div class="mainbox">
-            <div id="titlebox">
-                Title:
-            </div>
-
-            <div id="descbox">
-                Description:
-            </div>
-
-            <div id="infobox">
-                By:
-            </div>
-
-            <div id="imagebox">
-                IMG
-            </div>
-
-            <div id="ratingbox">
-                Rating:
-            </div>
+        
+        <div class="">
+            Loading ...
         </div>
+    
     </div>
 
 
@@ -84,15 +50,15 @@
                 Upload your project!
             </div>
 
-            <div>name:<br> <input type="text" id=""></div>
-            <div>youre projects name:<br> <input type="text" id=""></div>
-            <div>description:<br> <textarea style="width: 75%;" id=""></textarea></div>
-            <div>image:<br> <input type="file" accept=".png" id="myInput"></div>
+            <div>name:<br> <input type="text" id="fName"></div>
+            <div>youre projects name:<br> <input type="text" id="fProjName"></div>
+            <div>description:<br> <textarea style="width: 75%;" id="fDesc"></textarea></div>
+            <div>image:<br> <input type="file" accept=".png" id="fImg"></div>
 
 
             <div style="width: 50%; left: 25%; position: absolute; bottom: 2%;">
-                <div class="popUpButton" onclick="togglePopUp()">cancel</div>
-                <div class="popUpButton" onclick="">upload</div>
+                <div class="popUpButton hover1" onclick="togglePopUp()">cancel</div>
+                <div class="popUpButton hover1" onclick="handleProjectSubmission()">upload</div>
             </div>
         </div>
     </div>

@@ -10,6 +10,7 @@ if(useLocalJsonFile){
             //searchFromURL
             let urlParameters = window.location.search;
             urlParameters = urlParameters.slice(1);
+            if(urlParameters.length < 1){urlParameters = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p'}
             search(null, urlParameters)
         })
     })
@@ -29,6 +30,7 @@ if(useLocalJsonFile){
             //searchFromURL
             let urlParameters = window.location.search;
             urlParameters = urlParameters.slice(1);
+            if(urlParameters.length < 1){urlParameters = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p'}
             search(null, urlParameters)
         })
     })
@@ -45,6 +47,7 @@ function displayResults(searchResArr){
     if(searchResArr.length == 0){
         let c = document.createElement("h2");
         c.style.textAlign = "center"
+        c.style.marginTop = "15vmin"
         c.innerHTML = "No results found"
 
         container.appendChild(c);
@@ -59,9 +62,10 @@ function displayResults(searchResArr){
         c.appendChild(p);
 
         let hc = document.createElement("div");
-        hc.style = "border-left: 1px solid black;";
+        hc.style = "border-left: 1px solid black; position: relative;";
         let sp = document.createElement("span");
-        sp.className = "material-symbols-outlined"
+        sp.className = "material-symbols-outlined center1 redHover";
+        sp.style = "font-size: 6vmin;";
         sp.innerHTML = "favorite"
         hc.appendChild(sp);
         c.appendChild(hc);
@@ -71,9 +75,11 @@ function displayResults(searchResArr){
         c.appendChild(p2);
 
         let hc2 = document.createElement("div");
-        hc2.style = "border-left: 1px solid black; border-top: 1px solid black;";
+        hc2.style = "border-left: 1px solid black; border-top: 1px solid black; position: relative;";
         let sp2 = document.createElement("span");
-        sp2.className = "material-symbols-outlined"
+        sp2.className = "material-symbols-outlined center1 blueHover";
+        sp2.style = "font-size: 6vmin;";
+
         sp2.innerHTML = "arrow_forward"
         sp2.onclick = ()=>{
             location.href = '../3 Project Showcase Page/index.html?' + searchResArr[i][0].Title;
